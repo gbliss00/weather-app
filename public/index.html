@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+        <!-- make responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Journal App</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- grid template -->
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/weather.mp4" type="video/mp4">
+    </video>
+    <div id="app">
+        <div class="holder headline">
+            <!-- main heading -->
+            <h1>Weather Journal App</h1>
+        </div>
+        <!-- zip field -->
+        <div class="holder zip">
+            <label for="zip">Enter Zip code here <span class="only">(u.s. only)</span></label>
+            <input type="text" id="zip" placeholder="Enter zip code here...">
+        </div>
+        <!-- feeling field -->
+        <div class="holder feel">
+            <label for="feelings">How are you feeling today?</label>
+            <textarea class="myInput" id="feelings" placeholder="Enter your feelings here..." rows="5"
+                cols="50"></textarea>
+            <button id="generate" type="submit">Generate</button>
+        </div>
+        <!-- output data -->
+        <div class="holder entry">
+            <div class="title">Most Recent Entry</div>
+            <div id="entryHolder">
+                <div id="date"></div>
+                <div id="temp"></div>
+                <div id="content"></div>
+                <div id="city"></div>
+            </div>
+        </div>
+    </div>
+    <!-- grid template -->
+
+    <script src="app.js" type="text/javascript"></script>
+
+</body>
+
+</html>
